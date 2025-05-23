@@ -12,37 +12,45 @@ console.log("O tamanho do Array nomes é: " + nomes.length);
 
 
 // EXERCÍCIO 02 - Adicionando elementos ao final
-// Adicione dois nomes ao final do array criado anteriormente.
-// Método sugerido: push
+let nomes = ["Ana", "Carlos", "Joana"];
+nomes.push("Bruno", "Fernanda");
+console.log("Após push:", nomes);
 
 // EXERCÍCIO 03 - Inserindo no início
-// Adicione um nome no início do array.
-// Método sugerido: unshift
+nomes.unshift("Paula");
+console.log("Após unshift:", nomes);
 
 // EXERCÍCIO 04 - Removendo o último
-// Remova o último nome do array e exiba o nome removido e o array restante.
-// Método sugerido: pop
+let removidoFinal = nomes.pop();
+console.log("Nome removido (final):", removidoFinal);
+console.log("Array restante:", nomes);
 
 // EXERCÍCIO 05 - Removendo o primeiro
-// Remova o primeiro nome do array e exiba o nome removido e o array restante.
-// Método sugerido: shift
+let removidoInicio = nomes.shift();
+console.log("Nome removido (início):", removidoInicio);
+console.log("Array restante:", nomes);
 
 // EXERCÍCIO 06 - Removendo e adicionando elementos
-// Crie um array com cinco frutas. Remova duas frutas a partir da segunda posição e adicione duas novas frutas no lugar.
-// Método sugerido: splice
+let frutas = ["maçã", "banana", "laranja", "uva", "kiwi"];
+frutas.splice(1, 2, "abacaxi", "manga");
+console.log("Frutas após splice:", frutas);
 
 // EXERCÍCIO 07 - Exibindo o tamanho do array
-// Exiba o tamanho do array de frutas após a alteração.
-// Método sugerido: length
+console.log("Tamanho do array de frutas:", frutas.length);
 
 // EXERCÍCIO 08 - Criando um histórico de páginas
-// Crie um array chamado historico e simule acessos às páginas "home", "sobre" e "contato".
-// Método sugerido: push
+let historico = [];
+historico.push("home");
+historico.push("sobre");
+historico.push("contato");
+console.log("Histórico de páginas:", historico);
 
 // EXERCÍCIO 09 - Removendo o último acesso do histórico
-// Remova o último acesso do histórico e exiba "Saída da página: contato".
-// Método sugerido: pop
+let ultimaPagina = historico.pop();
+console.log("Saída da página:", ultimaPagina);
+console.log("Histórico restante:", historico);
 
 // EXERCÍCIO 10 - Alterando elementos
-// Crie um array de quatro cores e troque a terceira cor por "azul-marinho".
-// Método sugerido: splice
+let cores = ["vermelho", "verde", "amarelo", "roxo"];
+cores.splice(2, 1, "azul-marinho");
+console.log("Cores após alteração:", cores);
